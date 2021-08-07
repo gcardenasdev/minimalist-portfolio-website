@@ -1,0 +1,100 @@
+:root {
+    --ff-ibarra-serif: font-family: 'Ibarra Real Nova', serif;
+    --ff-public-sans: font-family: 'Public Sans', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --fs-200: 0.938rem;
+    --fs-300: 1rem;
+    --fs-400: 2rem;
+    --fs-500: 2.5rem;
+    --fs-600: 3.125rem;
+
+    --clr-primary-400: rgb(95, 180, 162);
+    --clr-primary-500: rgb(32, 58, 76);
+    --clr-primary-600: rgb(51, 50, 61);
+
+    --clr-secondary-100: rgb(250, 250, 250);
+    --clr-secondary-200: rgb(234, 234, 235);
+    --clr-secondary-400: rgb(244, 48, 48);
+
+    --br: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--br);
+  }
+
+
+  /* layout utilities */
+
+  
+  .container {
+    max-width: 69.375rem;
+    margin: 0 auto;
+  }
+  
+  .flow-content > * + * {
+    margin-top: var(--flow-spacer, 1em);
+  }
+  
+  .split {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .split > * + * {
+    margin: 4rem 0 0 0;
+  }
+  
+  .split > * {
+    flex-basis: 100%;
+  }
+  
+  @media (min-width: 40em) {
+    .split {
+      flex-direction: row;
+    }
+  
+    .split > * + * {
+      margin: 0 0 0 2.5rem;
+    }
+  }

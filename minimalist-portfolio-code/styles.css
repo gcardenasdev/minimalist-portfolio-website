@@ -1,6 +1,6 @@
 :root {
-    --ff-ibarra-serif: font-family: 'Ibarra Real Nova', serif;
-    --ff-public-sans: font-family: 'Public Sans', sans-serif;
+    --ff-ibarra-serif:'Ibarra Real Nova', serif;
+    --ff-public-sans:'Public Sans', sans-serif;
 
     --fw-400: 400;
     --fw-700: 700;
@@ -60,7 +60,15 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: var(--br);
+    
+  }
+
+  body {
+      background-color: var(--clr-secondary-100);
+      font-family: var(--ff-public-sans);
+      line-height: 1.5;
+      font-weight: var(--fw-400);
+      padding: 2rem;
   }
 
 
@@ -98,3 +106,77 @@ img {
       margin: 0 0 0 2.5rem;
     }
   }
+
+  /* style utilities */
+
+  .btn-secondary {
+      border: 1px solid var(--clr-primary-500);
+      background-color: var(--clr-secondary-100);
+      padding: .95rem 1.5rem;
+      display: inline-block;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-family: var(--ff-public-sans);
+      font-size: .75em;
+      color: var(--clr-primary-600);
+  }
+
+  .btn-secondary:hover, 
+  .btn-secondary:focus {
+      background-color: var(--clr-primary-500);
+      color: var(--clr-secondary-100);
+  }
+
+  .btn-secondary:disabled {
+      border-color: var(--clr-secondary-400);
+  }
+
+  .btn-primary {
+    border: 1px solid var(--clr-primary-500);
+    padding: .95rem 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-family: var(--ff-public-sans);
+    font-size: .75em;
+    background-color: var(--clr-primary-500);
+    color: var(--clr-secondary-100);
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus {
+      background-color: var(--clr-primary-400);
+      border-color: var(--clr-primary-400);
+  }
+
+  /* typography */
+
+  h1,
+  h2,
+  h3 {
+      font-family: var(--ff-ibarra-serif);
+  }
+
+  h1 {
+      font-weight: var(--fw-700);
+      font-size: var(--fs-600);
+  }
+
+  h2 {
+      font-weight: var(--fw-700);
+      font-size: var(--fs-500);
+  }
+
+  h3 {
+      font-weight: var(--fw-400);
+      font-size: var(--fs-400);
+  }
+
+  
+
+
+

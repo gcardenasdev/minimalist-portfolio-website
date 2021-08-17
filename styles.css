@@ -389,6 +389,10 @@ img {
 
   /* Project styles */
 
+  .project-box div:nth-of-type(2) h3:first-of-type {
+    margin-top: 1.5em;
+  }
+
   .project-box-about {
     border-top: 1px solid rgba(51, 50, 61, 0.15);
     border-bottom: 1px solid rgba(51, 50, 61, 0.15);
@@ -400,6 +404,55 @@ img {
     margin-top: 3em;
   }
 
+  .green-text {
+    color: var(--clr-primary-400);
+  }
+
+  .project-text {
+    font-size: var(--fs-200);
+  }
+
+  .project-nav {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
+    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  }
+
+  .project-nav a {
+    color: var(--clr-primary-600);
+    letter-spacing: 0; 
+    text-transform: none; 
+    padding: 2em 0;  
+  }
+ 
+  .project-nav .nav-text p {
+    color: var(--clr-primary-600);
+    opacity: 0.5;
+  }
+
+  .nav-left {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+
+  .divider {
+    min-height: 100%;
+    width: .07em;
+    background-color: rgba(51, 50, 61, 0.15);
+    opacity: 0.5;
+    align-self: stretch;
+  }
+
+
 
   @media (min-width: 40em){
      
@@ -408,12 +461,36 @@ img {
     align-items: flex-start;
   }
 
+  .project-box div:nth-of-type(2) h3:first-of-type {
+    margin-top: 0;
+  }
+
   .project-box-about {
     max-width: 21.875em;
     margin: 0 4em 0 0;
   }
 
+  .project-nav a {
+    align-items: center;
   }
+
+  .nav-left {
+    flex-direction: row;
+  }
+
+  .nav-left .nav-text {
+    margin-left: 2em;
+  }
+
+  .nav-right {
+    flex-direction: row-reverse;
+  }
+
+  .nav-right .nav-text {
+    margin-right: 2em;
+  }
+
+}
 
 
 

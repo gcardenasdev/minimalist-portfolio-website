@@ -56,7 +56,8 @@ ol[class] {
   padding: 0;
 }
 
-a {
+a,
+.btn {
   padding: .5rem 1.5em;
   display: inline-block;
   cursor: pointer;

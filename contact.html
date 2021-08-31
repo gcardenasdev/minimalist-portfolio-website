@@ -17,7 +17,7 @@
   <header class="container">
     <nav class="primary-nav">
       <div class="logo">
-        <img src="images/logo.svg" alt="">
+       <a href="./index.html"> <img src="images/logo.svg" alt=""></a>
       </div>
       <div class="mobile-icons">
         <svg id="open" class="burger-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="13"><g fill="#33323D" fill-rule="evenodd"><path d="M0 0h24v1H0zM0 6h24v1H0zM0 12h24v1H0z"/></g></svg>
@@ -37,6 +37,7 @@
   </header>
 
   <section class="container">
+    <div>
       <h2>Get in Touch</h2>
 
       <p>
@@ -47,22 +48,23 @@
         who will always approach each task with a sense of purpose and attention to detail. 
         Please do feel free to check out my online profiles below and get in touch using the form.
       </p>
-
-      
+    </div>
+    <div class="">
       <h2>Contact Me</h2>
 
       <form>
 
-        <lable for="name">Name</lable><br>
+        <label for="name">Name</label><br>
         <input type="text" id="name" placeholder="Jane Appleseed"><br>
-        <lable for="email">Email Adress</lable><br>
+        <label for="email">Email Adress</label><br>
         <input type="email" id="email" placeholder="email@example.com"><br>
-        <lable for="message">Message</lable><br>
-        <input type="textarea" id="message" placeholder="How can I help?"><br>
+        <label for="message">Message</label><br>
+        <textarea id="message" placeholder="How can I help?"></textarea><br>
 
-        <input type="submit" class="btn btn-primary" id="submit" value="Send Message">
+        <!-- <input type="submit" class="btn btn-primary" id="submit" value="Send Message"> -->
+        <button class="btn btn-primary">Send Message</button>
       </form>
-
+    </div>
   
       
   </section>

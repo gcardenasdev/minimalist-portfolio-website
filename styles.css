@@ -140,11 +140,35 @@ img {
 
       
     .container {
-      max-width: 77.1%;
+      max-width: 57%;
       margin: 0 auto;
       padding: 0;
     }
   
+  }
+
+  .split {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .split > * {
+    flex-basis: 100%;
+  }
+  
+  .split > * + * {
+    margin: 4rem 0 0 0;
+  }
+  
+  @media (min-width: 40em) {
+    .split {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .split > * + * {
+      margin: 0 0 0 2.5rem;
+    }
   }
 
   /* style utilities */
@@ -214,7 +238,7 @@ img {
 
     .info-box-about {
       max-width: 21.875em;
-      margin: 0 4em;
+      margin: 0 6em;
     }
 
     .contact-me{
@@ -529,3 +553,9 @@ label {
   font-size: var(--fs-200);
   font-weight: var(--fw-700);
 }
+
+.contact-about,
+.contact-form {
+  padding-top: 3rem;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+} 
